@@ -1,4 +1,4 @@
-MSSubClass: Identifies the type of dwelling involved in the sale.	
+MSSubClass: Identifies the type of dwelling involved in the sale. (loại nhà)
 
         20	1-STORY 1946 & NEWER ALL STYLES
         30	1-STORY 1945 & OLDER
@@ -17,7 +17,7 @@ MSSubClass: Identifies the type of dwelling involved in the sale.
        180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER
        190	2 FAMILY CONVERSION - ALL STYLES AND AGES
 
-MSZoning: Identifies the general zoning classification of the sale.
+MSZoning: Identifies the general zoning classification of the sale. (vùng nhà)
 		
        A	Agriculture
        C	Commercial
@@ -28,36 +28,36 @@ MSZoning: Identifies the general zoning classification of the sale.
        RP	Residential Low Density Park 
        RM	Residential Medium Density
 	
-LotFrontage: Linear feet of street connected to property
+LotFrontage: Linear feet of street connected to property (kcách từ nhà đến mặt đường/12inch)
 
-LotArea: Lot size in square feet
+LotArea: Lot size in square feet(diện tích 1 lô)
 
-Street: Type of road access to property
+Street: Type of road access to property (loại đường kết nối với nhà)
 
-       Grvl	Gravel	
-       Pave	Paved
+       Grvl	Gravel (sỏi)	
+       Pave	Paved (đường lát)
        	
-Alley: Type of alley access to property
+Alley: Type of alley access to property (ngõ hẻm kết nối với nhà)
 
        Grvl	Gravel
        Pave	Paved
        NA 	No alley access
 		
-LotShape: General shape of property
+LotShape: General shape of property 
 
        Reg	Regular	
        IR1	Slightly irregular
        IR2	Moderately Irregular
-       IR3	Irregular
+       IR3	Irregular (ko đồng đều)
        
-LandContour: Flatness of the property
+LandContour: Flatness of the property (hình dạng đất của nhà)
 
        Lvl	Near Flat/Level	
-       Bnk	Banked - Quick and significant rise from street grade to building
+       Bnk	Banked - Quick and significant rise from street grade to building 
        HLS	Hillside - Significant slope from side to side
        Low	Depression
 		
-Utilities: Type of utilities available
+Utilities: Type of utilities available (tiện nghi)
 		
        AllPub	All public Utilities (E,G,W,& S)	
        NoSewr	Electricity, Gas, and Water (Septic Tank)
@@ -72,13 +72,13 @@ LotConfig: Lot configuration
        FR2	Frontage on 2 sides of property
        FR3	Frontage on 3 sides of property
 	
-LandSlope: Slope of property
+LandSlope: Slope of property (độ dốc)
 		
        Gtl	Gentle slope
        Mod	Moderate Slope	
        Sev	Severe Slope
 	
-Neighborhood: Physical locations within Ames city limits
+Neighborhood: Physical locations within Ames city limits (vị trí ghạn trong ames city)
 
        Blmngtn	Bloomington Heights
        Blueste	Bluestem
@@ -130,7 +130,7 @@ Condition2: Proximity to various conditions (if more than one is present)
        RRNe	Within 200' of East-West Railroad
        RRAe	Adjacent to East-West Railroad
 	
-BldgType: Type of dwelling
+BldgType: Type of dwelling (loại nhà có người ở)
 		
        1Fam	Single-family Detached	
        2FmCon	Two-family Conversion; originally built as one-family dwelling
@@ -140,7 +140,7 @@ BldgType: Type of dwelling
 	
 HouseStyle: Style of dwelling
 	
-       1Story	One story
+       1Story	One story (1 tầng)
        1.5Fin	One and one-half story: 2nd level finished
        1.5Unf	One and one-half story: 2nd level unfinished
        2Story	Two story
@@ -149,7 +149,7 @@ HouseStyle: Style of dwelling
        SFoyer	Split Foyer
        SLvl	Split Level
 	
-OverallQual: Rates the overall material and finish of the house
+OverallQual: Rates the overall material and finish of the house (đánh giá độ hoàn thiện nhà)
 
        10	Very Excellent
        9	Excellent
@@ -162,7 +162,7 @@ OverallQual: Rates the overall material and finish of the house
        2	Poor
        1	Very Poor
 	
-OverallCond: Rates the overall condition of the house
+OverallCond: Rates the overall condition of the house (đánh giá đkiện nhà)
 
        10	Very Excellent
        9	Excellent
@@ -179,7 +179,7 @@ YearBuilt: Original construction date
 
 YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)
 
-RoofStyle: Type of roof
+RoofStyle: Type of roof(mái nhà)
 
        Flat	Flat
        Gable	Gable
@@ -199,7 +199,7 @@ RoofMatl: Roof material
        WdShake	Wood Shakes
        WdShngl	Wood Shingles
 		
-Exterior1st: Exterior covering on house
+Exterior1st: Exterior covering on house (lớp phủ bên ngoài nhà)
 
        AsbShng	Asbestos Shingles
        AsphShn	Asphalt Shingles
@@ -239,7 +239,7 @@ Exterior2nd: Exterior covering on house (if more than one material)
        Wd Sdng	Wood Siding
        WdShing	Wood Shingles
 	
-MasVnrType: Masonry veneer type
+MasVnrType: Masonry veneer type (loại vữa xây)
 
        BrkCmn	Brick Common
        BrkFace	Brick Face
@@ -265,7 +265,7 @@ ExterCond: Evaluates the present condition of the material on the exterior
        Fa	Fair
        Po	Poor
 		
-Foundation: Type of foundation
+Foundation: Type of foundation (móng)
 		
        BrkTil	Brick & Tile
        CBlock	Cinder Block
@@ -274,13 +274,13 @@ Foundation: Type of foundation
        Stone	Stone
        Wood	Wood
 		
-BsmtQual: Evaluates the height of the basement
+BsmtQual: Evaluates the height of the basement(tầng hầm)
 
        Ex	Excellent (100+ inches)	
        Gd	Good (90-99 inches)
        TA	Typical (80-89 inches)
        Fa	Fair (70-79 inches)
-       Po	Poor (<70 inches
+       Po	Poor (<70 inches)
        NA	No Basement
 		
 BsmtCond: Evaluates the general condition of the basement
@@ -324,13 +324,13 @@ BsmtFinType2: Rating of basement finished area (if multiple types)
 
 BsmtFinSF2: Type 2 finished square feet
 
-BsmtUnfSF: Unfinished square feet of basement area
+BsmtUnfSF: Unfinished square feet of basement area (diện tích tầng hầm chưa hoàn thành)
 
 TotalBsmtSF: Total square feet of basement area
 
-Heating: Type of heating
+Heating: Type of heating (sưởi)
 		
-       Floor	Floor Furnace
+       Floor	Floor Furnace 
        GasA	Gas forced warm air furnace
        GasW	Gas hot water or steam heat
        Grav	Gravity furnace	
@@ -358,7 +358,7 @@ Electrical: Electrical system
        FuseP	60 AMP Fuse Box and mostly knob & tube wiring (poor)
        Mix	Mixed
 		
-1stFlrSF: First Floor square feet
+1stFlrSF: First Floor square feet (diện tích tầng 1)
  
 2ndFlrSF: Second floor square feet
 
@@ -370,7 +370,7 @@ BsmtFullBath: Basement full bathrooms
 
 BsmtHalfBath: Basement half bathrooms
 
-FullBath: Full bathrooms above grade
+FullBath: Full bathrooms above grade (trên mặt đất)
 
 HalfBath: Half baths above grade
 
@@ -399,7 +399,7 @@ Functional: Home functionality (Assume typical unless deductions are warranted)
        Sev	Severely Damaged
        Sal	Salvage only
 		
-Fireplaces: Number of fireplaces
+Fireplaces: Number of fireplaces(số lượng lò sưởi)
 
 FireplaceQu: Fireplace quality
 
@@ -425,7 +425,7 @@ GarageYrBlt: Year garage was built
 GarageFinish: Interior finish of the garage
 
        Fin	Finished
-       RFn	Rough Finished	
+       RFn	Rough Finished (khó khăn)
        Unf	Unfinished
        NA	No Garage
 		
@@ -454,18 +454,18 @@ GarageCond: Garage condition
 PavedDrive: Paved driveway
 
        Y	Paved 
-       P	Partial Pavement
+       P	Partial Pavement (1 phần vỉa hè)
        N	Dirt/Gravel
 		
-WoodDeckSF: Wood deck area in square feet
+WoodDeckSF: Wood deck area in square feet (a wooden floor built outside, where people can sit and relax)
 
-OpenPorchSF: Open porch area in square feet
+OpenPorchSF: Open porch area in square feet (diện tích hiên nhà mở)
 
 EnclosedPorch: Enclosed porch area in square feet
 
-3SsnPorch: Three season porch area in square feet
+3SsnPorch: Three season porch area in square feet (nhà 3 mùa: gương bao quanh)
 
-ScreenPorch: Screen porch area in square feet
+ScreenPorch: Screen porch area in square feet(hiên có màn che)
 
 PoolArea: Pool area in square feet
 
@@ -477,7 +477,7 @@ PoolQC: Pool quality
        Fa	Fair
        NA	No Pool
 		
-Fence: Fence quality
+Fence: Fence quality (rào chắn)
 		
        GdPrv	Good Privacy
        MnPrv	Minimum Privacy
@@ -485,7 +485,7 @@ Fence: Fence quality
        MnWw	Minimum Wood/Wire
        NA	No Fence
 	
-MiscFeature: Miscellaneous feature not covered in other categories
+MiscFeature: Miscellaneous feature not covered in other categories (các mục khác k đc đề cập ở trên)
 		
        Elev	Elevator
        Gar2	2nd Garage (if not described in garage section)
