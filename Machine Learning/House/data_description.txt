@@ -64,12 +64,12 @@ Utilities: Type of utilities available (tiện nghi)
        NoSeWa	Electricity and Gas Only
        ELO	Electricity only	
 	
-LotConfig: Lot configuration
+LotConfig: Lot configuration 
 
        Inside	Inside lot
        Corner	Corner lot
        CulDSac	Cul-de-sac
-       FR2	Frontage on 2 sides of property
+       FR2	Frontage on 2 sides of property (2 mặt đường)
        FR3	Frontage on 3 sides of property
 	
 LandSlope: Slope of property (độ dốc)
