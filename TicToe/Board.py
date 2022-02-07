@@ -9,11 +9,14 @@ class Board():
         self.board = None
         self.button_board = None
         self.phase = 0
-        self.check = 0
+        # self.check = 0
     def destroy_and_getColRow(self,input_board,entry_row,entry_col):
-        if self.check != 2:
-            messagebox.showwarning("Cảnh báo","Vui lòng nhập đầy đủ và kiểm tra")
+        if not entry_row.get().isnumeric() or not entry_col.get().isnumeric():
+            messagebox.showwarning("Cảnh báo","Vui lòng nhập số")
             return
+        # if self.check != 2:
+        #     messagebox.showwarning("Cảnh báo","Vui lòng nhập đầy đủ và kiểm tra")
+        #     return
         self.row,self.col = entry_row.get(),entry_col.get()
         self.phase = 1
         input_board.destroy()
@@ -22,7 +25,7 @@ class Board():
             if int(text) < 5: 
                 messagebox.showinfo("Thử lại", "Vui lòng nhập số lớn hơn 5")
                 return 
-            self.check += 1
+            # self.check += 1
             messagebox.showinfo("Hoàn tất","Nhập thành công")
             button_check.grid_forget()
         else:
