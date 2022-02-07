@@ -111,17 +111,13 @@ class Player():
 
     def VerticalWin(self,input_row,input_col):
         if (self.checkWinConditionUp(input_row+1,input_col) + self.checkWinConditionDown(input_row-1,input_col) + 1) == 5:
-            print("end")
             return True
     def HorizonalWin(self,input_row,input_col):
         if (self.checkWinConditionLeft(input_row,input_col+1) + self.checkWinConditionRight(input_row,input_col-1) +1) == 5:
-            print("end")
             return True
     def DiagLeftRightWin(self,input_row,input_col):
         if (self.checkWinConditionDiagUpLeft(input_row+1,input_col+1) + self.checkWinConditionDiagDownRight(input_row-1,input_col-1)+1) == 5:
-            print("end")
             return True
     def DiagRightLeftWin(self,input_row,input_col):
         if (self.checkWinConditionDiagUpRight(input_row+1,input_col-1) + self.checkWinConditionDiagDownLeft(input_row-1,input_col+1)+1) == 5:
-            print("end")
             return True

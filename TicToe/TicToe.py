@@ -2,7 +2,6 @@ import sys
 from tkinter import *
 from Board import Board
 from Player import Player
-from threading import Thread
 
 if __name__ == "__main__":
     board = Board()
