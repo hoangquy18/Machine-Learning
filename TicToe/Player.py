@@ -29,6 +29,7 @@ class Player():
 
         if self.turn == 'X':
             self.button_board[i][j]['text'] = self.turn
+            self.button_board[i][j].configure(fg="blue")
             self.board[i][j] = self.turn
             if self.DiagRightLeftWin(i,j) or self.VerticalWin(i,j) or self.HorizonalWin(i,j) or self.DiagLeftRightWin(i,j):
                 messagebox.showinfo("Kết thúc", "X thắng")
@@ -36,6 +37,7 @@ class Player():
             self.turn = 'O'
         else:
             self.button_board[i][j]['text'] = self.turn
+            self.button_board[i][j].configure(fg="red")
             self.board[i][j] = self.turn
             if self.DiagRightLeftWin(i,j) or self.VerticalWin(i,j) or self.HorizonalWin(i,j) or self.DiagLeftRightWin(i,j):
                 messagebox.showinfo("Kết thúc", "O thắng")
