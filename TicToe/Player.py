@@ -14,10 +14,19 @@ class Player():
             messagebox.askretrycancel("Thử lại", "Vui lòng chọn vị trí khác")
             return False
         return True
+    def checkDraw(self):
+        check = 0
+        for i in range(self.row):
+            for j in range(self.col):
+                if self.board[i][j] != " ":
+                    check += 1
+        if check == self.row*self.col:
+            return True
+        return False
     def change(self,i,j):
-        # self.checkInput(i,j)
         if not self.checkInput(i,j):
             return
+
         if self.turn == 'X':
             self.button_board[i][j]['text'] = self.turn
             self.board[i][j] = self.turn
@@ -32,6 +41,10 @@ class Player():
                 messagebox.showinfo("Kết thúc", "O thắng")
                 sys.exit()
             self.turn = 'X'
+        if self.checkDraw():
+            messagebox.showinfo("Kết thúc", "Kết quả hòa")
+            sys.exit()
+
     def Play(self): #trigger
         for i in range(self.row):
             for j in range(self.col):

@@ -19,6 +19,9 @@ class Board():
         input_board.destroy()
     def checkInput(self,text,button_check):
         if text.isnumeric():
+            if int(text) < 5: 
+                messagebox.showinfo("Thử lại", "Vui lòng nhập số lớn hơn 5")
+                return 
             self.check += 1
             messagebox.showinfo("Hoàn tất","Nhập thành công")
             button_check.grid_forget()
@@ -60,7 +63,6 @@ class Board():
                 line.append(button)
             button_board.append(line)
         self.button_board = button_board
-
 
         board = []
         for i in button_board:
